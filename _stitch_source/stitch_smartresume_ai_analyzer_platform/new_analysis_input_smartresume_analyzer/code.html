@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#c3c0ff", "surface-tint": "#4d44e3", "primary-fixed": "#e2dfff", "background": "#faf8ff", "primary-container": "#4f46e5", "on-surface": "#131b2e", "primary": "#3525cd", "tertiary": "#95002b", "outline": "#777587", "error": "#ba1a1a", "tertiary-fixed": "#ffdadb", "surface-container-high": "#e2e7ff", "on-tertiary-container": "#ffd0d2", "on-primary-container": "#dad7ff", "on-secondary-fixed-variant": "#005236", "primary-fixed-dim": "#c3c0ff", "on-secondary": "#ffffff", "on-error-container": "#93000a", "tertiary-fixed-dim": "#ffb2b7", "on-primary-fixed-variant": "#3323cc", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "secondary-container": "#6cf8bb", "on-secondary-fixed": "#002113", "on-secondary-container": "#00714d", "tertiary-container": "#bf0f3c", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#92002a", "secondary-fixed-dim": "#4edea3", "on-surface-variant": "#464555", "on-error": "#ffffff", "on-primary": "#ffffff", "on-background": "#131b2e", "secondary": "#006c49", "surface-container-lowest": "#ffffff", "surface": "#faf8ff", "surface-variant": "#dae2fd", "surface-bright": "#faf8ff", "surface-container": "#eaedff", "on-tertiary-fixed": "#40000d", "secondary-fixed": "#6ffbbe", "outline-variant": "#c7c4d8", "surface-container-highest": "#dae2fd", "on-tertiary": "#ffffff", "surface-container-low": "#f2f3ff", "inverse-on-surface": "#eef0ff", "on-primary-fixed": "#0f0069" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin": "2rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "margin-mobile": "1rem" }, "fontFamily": { "headline-lg-mobile": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "headline-lg": [ "Plus Jakarta Sans" ], "label-badge": [ "JetBrains Mono" ], "body-md": [ "Inter" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ], "display": [ "Plus Jakarta Sans" ], "label-code": [ "JetBrains Mono" ], "body-lg": [ "Inter" ] }, "fontSize": { "headline-lg-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-sm": [ "0.75rem", { "lineHeight": "1.125rem", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" } ], "label-badge": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.03em", "fontWeight": "500" } ], "body-md": [ "0.875rem", { "lineHeight": "1.375rem", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-sm": [ "1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display": [ "3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "label-code": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "body-lg": [ "1rem", { "lineHeight": "1.625rem", "letterSpacing": "-0.01em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/40"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="SmartResume Analyzer Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UjV77lqZvOn6CHOv4Vy-2Owp3KXMfrnOrJpum7CWywq9U3AxgYUdT0ul5dqfoAZJPkPEt0MWJ8xqJoTI5L3omFBQc0faV-YiG01yZuvyDvgelJ1NrfNIlx-YDFg0ZvLFPlVjisP_eQBGxq5iqu3NhA3J1XjcPgl2IX9J7AE1ZemvRRAPeAkkkDKoL4m-zZ2BFhQxOjf0v3WOqQ6saBJrnVlGRMellX6Q06OFsHpeNAgKiM65Q2_CE0Iw"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">SmartResume Analyzer</span><span class="px-space-xs py-0.5 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-badge text-label-badge uppercase tracking-wider font-medium border border-secondary/20">AI Beta</span></div><nav class="hidden lg:flex items-center gap-space-xs p-1 bg-surface-container-low rounded-xl border border-outline-variant/30" data-active-classes="bg-surface-container text-primary font-semibold"><a class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="dashboard" href="#">Dashboard</a><a aria-current="page" class="px-space-md py-1.5 rounded-lg transition-colors bg-surface-container text-primary font-semibold" data-path="new-analysis" href="#">New Analysis</a><a class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="analysis-history" href="#">Analysis History</a><a class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="settings" href="#">Settings</a></nav></div><div class="flex items-center gap-space-md"><button class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-body-md text-body-md font-medium hover:bg-primary transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[18px]">document_scanner</span><span>Analyze Resume</span></button><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-tertiary-container"></span></button><div class="h-6 w-px bg-outline-variant/50"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right hidden sm:block leading-tight"><p class="font-body-md text-body-md font-semibold text-on-surface">Alex Chen</p><p class="font-label-badge text-label-badge text-on-surface-variant">CS Senior</p></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-gutter py-space-xl space-y-space-lg">
+<!-- Top Context & Header -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-label-badge text-label-badge text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Analyses</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">New Analysis</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pt-space-xs">
+<div class="space-y-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Targeted ATS Resume Analysis</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+            Upload your resume and paste the target job description to generate an explainable ATS score, keyword vector density, and semantic skill gap breakdown.
+          </p>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container rounded-xl shadow-sm self-start md:self-auto">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span class="font-label-code text-label-code text-on-surface font-medium">Model 4.2 • High Sensitivity</span>
+</div>
+</div>
+</div>
+<!-- Main Two-Column Workflow Workspace -->
+<form class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start" id="analysis-form" onsubmit="event.preventDefault();">
+<!-- LEFT COLUMN: Step 1 Resume Intake -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary-container text-on-primary font-label-badge text-label-badge font-bold">1</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Upload Your Resume</h2>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">Step 1 of 2</span>
+</div>
+<!-- Previously Uploaded Quick Select -->
+<div class="space-y-1.5">
+<label class="flex items-center justify-between text-body-sm font-body-sm font-medium text-on-surface-variant" for="prev-resume-select">
+<span>Quick Select Vault</span>
+<span class="text-primary hover:underline cursor-pointer font-label-code text-label-code">Manage Vault (3)</span>
+</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface text-body-md font-body-md rounded-lg py-2.5 pl-space-md pr-10 focus:outline-none focus:bg-surface-container-lowest transition-all cursor-pointer" id="prev-resume-select">
+<option selected="">Use previously uploaded resume (Spring 2025 General)</option>
+<option>Alex_Chen_Backend_Focused_v2.pdf (198 KB)</option>
+<option>Alex_Chen_Quantitative_Dev_2024.pdf (310 KB)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Divider -->
+<div class="flex items-center gap-space-sm my-space-xs">
+<div class="h-px bg-surface-container-high flex-1"></div>
+<span class="font-label-badge text-label-badge text-outline uppercase">Or upload fresh</span>
+<div class="h-px bg-surface-container-high flex-1"></div>
+</div>
+<!-- Dropzone Container -->
+<div class="relative group flex flex-col items-center justify-center p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer text-center" id="dropzone">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-center mb-space-sm group-hover:scale-105 transition-transform text-primary">
+<span class="material-symbols-outlined text-[28px]">cloud_upload</span>
+</div>
+<p class="font-body-md text-body-md font-medium text-on-surface mb-0.5">
+              Drag &amp; drop your resume file here or <span class="text-primary font-semibold underline decoration-primary/30">browse files</span>
+</p>
+<p class="font-label-code text-label-code text-on-surface-variant">
+              Supports PDF, DOCX (Max 10MB)
+            </p>
+<input accept=".pdf,.docx" class="absolute inset-0 opacity-0 cursor-pointer" id="resume-file-input" type="file"/>
+</div>
+<!-- Uploaded File Telemetry Preview Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<p class="font-body-md text-body-md font-semibold text-on-surface truncate" title="Alex_Chen_Software_Resume_2025.pdf">
+                    Alex_Chen_Software_Resume_2025.pdf
+                  </p>
+<p class="font-label-code text-label-code text-on-surface-variant">245.8 KB • 1 Page • 488 Words</p>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" title="Replace file" type="button">
+<span class="material-symbols-outlined text-[18px]">cached</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="Remove file" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Parsing Telemetry Badge -->
+<div class="flex items-center justify-between pt-space-xs mt-1">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-badge text-label-badge font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Parsed successfully</span>
+</div>
+<span class="font-label-code text-label-code text-secondary font-medium">Text Layer Validated</span>
+</div>
+<!-- Quick Parsed Entities preview tags -->
+<div class="pt-space-xs flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface font-label-badge text-label-badge">Java (Spring)</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface font-label-badge text-label-badge">TypeScript</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface font-label-badge text-label-badge">PostgreSQL</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface font-label-badge text-label-badge">Docker</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container text-on-surface-variant font-label-badge text-label-badge">+14 more tags</span>
+</div>
+</div>
+<!-- Document Inspection Callout -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0 mt-0.5">info</span>
+<p>Our AST parser verifies typography encoding and single-column bounding boxes to replicate Taleo, Workday, and Greenhouse pipelines.</p>
+</div>
+</div>
+<!-- Metric Sparkline / Quick Score Mini-Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="space-y-0.5">
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">Historical Baseline</span>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface">Alex Chen Portfolio</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Last checked 3 days ago: <span class="font-semibold text-secondary">88.4 Match</span></p>
+</div>
+<div class="w-16 h-10 flex items-end gap-1 px-1">
+<div class="w-2.5 bg-primary/20 rounded-t h-4"></div>
+<div class="w-2.5 bg-primary/40 rounded-t h-6"></div>
+<div class="w-2.5 bg-primary/60 rounded-t h-7"></div>
+<div class="w-2.5 bg-primary rounded-t h-9"></div>
+<div class="w-2.5 bg-secondary rounded-t h-10"></div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Step 2 Job Description & Context -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary-container text-on-primary font-label-badge text-label-badge font-bold">2</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Target Job Details</h2>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">Semantic Vector Target</span>
+</div>
+<!-- Job Metadata Row (Title & Company) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1.5">
+<label class="flex items-center justify-between text-body-sm font-body-sm font-medium text-on-surface" for="job-title">
+<span>Job Title <span class="text-error">*</span></span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Required</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg py-2.5 px-space-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all" id="job-title" placeholder="e.g. Software Engineer (New Grad)" type="text" value="Full Stack Software Engineer"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">badge</span>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="flex items-center justify-between text-body-sm font-body-sm font-medium text-on-surface" for="company-name">
+<span>Company Name</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Optional</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg py-2.5 px-space-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all" id="company-name" placeholder="e.g. Stripe, Robinhood" type="text" value="FinTech Core Inc."/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">domain</span>
+</div>
+</div>
+</div>
+<!-- Industry / Seniority Tier Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1.5">
+<label class="text-body-sm font-body-sm font-medium text-on-surface" for="seniority-level">Experience Tier</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface text-body-md font-body-md rounded-lg py-2.5 pl-space-md pr-10 focus:outline-none focus:bg-surface-container-lowest transition-all" id="seniority-level">
+<option>Internship / Co-op</option>
+<option selected="">Entry Level / New Grad (0-2 YOE)</option>
+<option>Mid-Level Professional (3-5 YOE)</option>
+<option>Senior Engineer (5+ YOE)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[20px]">unfold_more</span>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="text-body-sm font-body-sm font-medium text-on-surface" for="analysis-preset">Scoring Calibration</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface text-body-md font-body-md rounded-lg py-2.5 pl-space-md pr-10 focus:outline-none focus:bg-surface-container-lowest transition-all" id="analysis-preset">
+<option selected="">FinTech / Tier-1 Tech Baseline</option>
+<option>Early-Stage Venture Generalist</option>
+<option>Quant &amp; High-Frequency Systems</option>
+<option>Standard Corporate ATS (Workday Profile)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[20px]">tune</span>
+</div>
+</div>
+</div>
+<!-- Job Description Large Textarea -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<label class="text-body-sm font-body-sm font-medium text-on-surface flex items-center gap-1.5" for="job-description">
+<span>Job Description &amp; Role Requirements <span class="text-error">*</span></span>
+</label>
+<div class="flex items-center gap-space-sm font-label-code text-label-code">
+<button class="inline-flex items-center gap-1 text-primary hover:text-primary-container transition-colors" id="paste-btn" type="button">
+<span class="material-symbols-outlined text-[14px]">content_paste</span>
+<span>Paste clipboard</span>
+</button>
+<span class="text-outline-variant">•</span>
+<button class="inline-flex items-center gap-1 text-on-surface-variant hover:text-error transition-colors" id="clear-btn" type="button">
+<span class="material-symbols-outlined text-[14px]">clear</span>
+<span>Clear</span>
+</button>
+</div>
+</div>
+<div class="relative">
+<textarea class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg p-space-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all leading-relaxed" id="job-description" placeholder="Paste the complete job post, responsibilities, and qualifications..." rows="9">We are seeking a Full Stack Software Engineer to join our core banking engineering team. Required qualifications: Bachelor's in CS or related field, proficiency in Java and modern JavaScript/TypeScript (React). Hands-on experience with REST APIs and relational databases (SQL). Familiarity with Spring Boot, Docker, and AWS cloud services is highly desirable. Experience writing unit tests and working in agile teams to build resilient high-throughput financial infrastructure.</textarea>
+</div>
+<!-- Footer of Textarea: Counter & Auto-Tags Detected -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs font-label-code text-label-code text-on-surface-variant pt-1">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 text-secondary font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  8 Key Competencies Detected
+                </span>
+<span>(Java, TypeScript, React, SQL, Spring Boot, Docker, AWS, Testing)</span>
+</div>
+<span class="text-right" id="char-counter">1,420 / 10,000 characters</span>
+</div>
+</div>
+<!-- Optimization Focus Toggles -->
+<div class="pt-space-xs">
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider block mb-space-xs">Heuristic Weights</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<label class="flex items-center gap-space-xs p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Hard Skills Alignment</span>
+</label>
+<label class="flex items-center gap-space-xs p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Impact Quantification</span>
+</label>
+<label class="flex items-center gap-space-xs p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">ATS Formatting Check</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</form>
+<!-- Bottom Global Action Bar -->
+<div class="w-full bg-surface-container-lowest p-space-md md:px-space-lg rounded-xl shadow-md flex flex-col md:flex-row items-center justify-between gap-space-md sticky bottom-4 z-40">
+<!-- Telemetry Status Info -->
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+</div>
+<div>
+<p class="font-semibold text-on-surface leading-tight">Estimated analysis time: ~5 seconds</p>
+<p class="font-label-code text-label-code text-on-surface-variant">Powered by Explainable ATS Engine v2.4 • Non-destructive extraction</p>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-body-md text-body-md font-medium transition-colors shadow-sm" type="button">
+          Save Draft
+        </button>
+<button class="relative group inline-flex items-center justify-center gap-space-xs px-space-xl py-2.5 rounded-lg bg-primary-container text-on-primary font-body-md text-body-md font-semibold hover:bg-primary transition-all shadow-md shadow-primary/20 overflow-hidden" id="trigger-analyze" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-45">analytics</span>
+<span>Analyze Resume &amp; Match Job →</span>
+<div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+</button>
+</div>
+</div>
+<!-- Diagnostic Footnote Checklist -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<div class="flex items-start gap-space-sm p-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<div>
+<p class="font-body-md text-body-md font-semibold text-on-surface">Zero Data Retention Option</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Resumes are tokenized strictly in volatile memory. No institutional scraping.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">difference</span>
+<div>
+<p class="font-body-md text-body-md font-semibold text-on-surface">Granular Diff Recommendations</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Generates before/after bullet revisions with embedded action verbs.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm">
+<span class="material-symbols-outlined text-surface-tint text-[20px]">speed</span>
+<div>
+<p class="font-body-md text-body-md font-semibold text-on-surface">Real-time Keyword Coverage</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Identifies critical software stack mismatches before human recruiter screen.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive updates for character counting & clipboard helpers
+  const textarea = document.getElementById('job-description');
+  const counter = document.getElementById('char-counter');
+  const clearBtn = document.getElementById('clear-btn');
+  const pasteBtn = document.getElementById('paste-btn');
+  const triggerAnalyze = document.getElementById('trigger-analyze');
+
+  function updateCounter() {
+    if (!textarea || !counter) return;
+    const len = textarea.value.length;
+    counter.textContent = `${len.toLocaleString()} / 10,000 characters`;
+  }
+
+  if (textarea) {
+    textarea.addEventListener('input', updateCounter);
+  }
+
+  if (clearBtn && textarea) {
+    clearBtn.addEventListener('click', () => {
+      textarea.value = '';
+      updateCounter();
+      textarea.focus();
+    });
+  }
+
+  if (pasteBtn && textarea) {
+    pasteBtn.addEventListener('click', async () => {
+      try {
+        const text = await navigator.clipboard.readText();
+        if (text) {
+          textarea.value = text;
+          updateCounter();
+        }
+      } catch (err) {
+        textarea.focus();
+      }
+    });
+  }
+
+  if (triggerAnalyze) {
+    triggerAnalyze.addEventListener('click', () => {
+      const originalText = triggerAnalyze.innerHTML;
+      triggerAnalyze.disabled = true;
+      triggerAnalyze.innerHTML = `
+        <span class="material-symbols-outlined text-[20px] animate-spin">refresh</span>
+        <span>Evaluating Vector Match...</span>
+      `;
+      setTimeout(() => {
+        triggerAnalyze.disabled = false;
+        triggerAnalyze.innerHTML = originalText;
+      }, 1600);
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 py-space-md px-gutter"><div class="w-full flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-space-sm font-label-code text-label-code"><span>SmartResume Core Engine v2.4</span><span class="text-outline-variant">•</span><span class="text-secondary font-medium">ATS Diagnostic Ready</span></div><p>© 2025 SmartResume Analyzer Inc. Institutional Grade Telemetry.</p></div></footer></body></html>

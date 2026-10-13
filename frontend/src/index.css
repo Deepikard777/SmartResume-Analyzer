@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------------
+ * Icon font (offline-safe).
+ *
+ * Material Symbols is loaded from Google Fonts, and Google's stylesheet normally
+ * supplies these class rules. Relying on that means that when the webfont is
+ * unreachable — offline, blocked, or a slow/absent network — no rule matches at all
+ * and every icon renders as its literal ligature name ("dashboard", "check_circle"),
+ * which breaks the layout badly.
+ *
+ * Defining the rules locally, with the webfont first and a system font after it,
+ * guarantees the box behaves identically either way. `font-feature-settings: 'liga'`
+ * enables the ligature substitution when the real font IS present.
+ * ------------------------------------------------------------------------ */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined', 'Material Icons', 'Segoe UI Symbol', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/*
+ * When the icon webfont is unavailable, the glyph cannot be drawn. Rather than showing
+ * the ligature name as text, keep the element's box (so every flex/grid measurement is
+ * unchanged) and paint a neutral placeholder of the same optical size.
+ *
+ * `-webkit-text-fill-color` hides the text without changing `color`, so the placeholder
+ * outline can still use `currentColor` and therefore match whatever tone the icon had.
+ */
+html[data-icons='unavailable'] .material-symbols-outlined {
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+html[data-icons='unavailable'] .material-symbols-outlined::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.5em;
+  height: 0.5em;
+  transform: translate(-50%, -50%);
+  border: 0.12em solid currentColor;
+  border-radius: 0.1em;
+  opacity: 0.5;
+  pointer-events: none;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <title>SmartResume Analyzer</title>
+    <!--
+      Webfonts are progressive enhancement only.
+
+      Everything below is loaded from Google Fonts, which may be unreachable (offline
+      demo, blocked network). Nothing here is required for the app to work:
+        * tailwind.config.js defines cross-platform system fallbacks for every family,
+          so the text stays readable and keeps its intended character;
+        * index.css defines the .material-symbols-outlined rules locally (Google's
+          stylesheet normally supplies them) and replaces the icon with a neutral
+          placeholder when the font cannot be drawn, so no ligature name is ever shown
+          as text and no layout measurement changes.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- display=block: during the block period nothing is painted, which prevents a
+         flash of literal icon names while the icon font is still loading. -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
